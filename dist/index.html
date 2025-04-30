@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CRUD Students</title>
+
+  <link rel="stylesheet" href="/crud-js.1303bb05.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Список студентів</h1>
+
+    <button id="get-students-btn">Отримати чи оновити всіх студентів</button>
+
+
+
+    <table id="students-table">
+
+      <thead>
+
+        <tr>
+
+          <th>ID</th>
+
+          <th>Ім'я</th>
+
+          <th>Вік</th>
+
+          <th>Курс</th>
+
+          <th>Навички</th>
+
+          <th>Email</th>
+
+          <th>Статус</th>
+          <th>Дія</th>
+
+        </tr>
+      </thead>
+
+      <tbody>
+        
+        <!-- Динамічно заповнено -->
+
+      </tbody>
+
+    </table>
+
+
+
+    <h2>Додати нового студента</h2>
+
+    <form id="add-student-form">
+
+      <label>Ім'я: <input type="text" id="name" required=""></label>
+
+      <label>Вік: <input type="number" id="age" required=""></label>
+
+      <label>Курс: <input type="text" id="course" required=""></label>
+
+      <label>Навички (через кому): <input type="text" id="skills" required=""></label>
+
+      <label>Email: <input type="email" id="email" required=""></label>
+
+      <label>Записаний: <input type="checkbox" id="isEnrolled"></label>
+
+      <button type="submit">Додати студента</button>
+
+    </form>
+    <h2>Редагувати студента</h2>
+
+    <form id="edit-student-form">
+      <label>ID: <input type="text" id="edit_id" required=""></label>
+
+      <label>Ім'я: <input type="text" id="edit_name" required=""></label>
+
+      <label>Вік: <input type="number" id="edit_age" required=""></label>
+
+      <label>Курс: <input type="text" id="edit_course" required=""></label>
+
+      <label>Навички (через кому): <input type="text" id="edit_skills" required=""></label>
+
+      <label>Email: <input type="email" id="edit_email" required=""></label>
+
+      <label>Записаний: <input type="checkbox" id="edit_isEnrolled"></label>
+
+      <button type="submit">Редагувати студента</button>
+
+    </form>
+    <h2>Видалити студента</h2>
+
+    <form id="delete-student-form">
+      <label>ID: <input type="text" id="delete_id" required=""></label>
+
+      <button type="submit">Видалити студента</button>
+
+    </form>
+  </div>
+
+  <script src="/crud-js.672d4772.js"></script>
+
+<script src="/crud-js.3464ddca.js"></script></body>
+
+</html>
+
